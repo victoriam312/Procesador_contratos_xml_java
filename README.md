@@ -20,3 +20,8 @@ Este proyecto es una aplicación Java diseñada para la gestión y transformaci�
 
 * Tener instalado Java y MySQL.
 * Crear la base de datos ejecutando el script SQL incluido (`script.sql`).
+* Configurar la conexión: copiar `db.properties.example` como `db.properties` (en la raíz del proyecto) y poner el usuario y la contraseña de MySQL. Este archivo está en `.gitignore`, así que las credenciales nunca se suben al repositorio. También se pueden usar las variables de entorno `DB_URL`, `DB_USER` y `DB_PASSWORD`.
+
+## Ejecución
+
+Ejecutar la clase principal `com.victoria.trabajo_final.Main` desde NetBeans. El programa lee `contratos.xml`, inserta los contratos en MySQL y genera `contratos_procesados.xml` sin los campos sensibles.
